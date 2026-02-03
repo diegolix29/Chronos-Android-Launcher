@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<ImageView
+        android:id="@+id/mainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bpg"
+        android:scaleType="centerCrop" />
+
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" />
+
+	<LinearLayout
+			android:id="@+id/customStatusBar"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:orientation="horizontal"
+			android:paddingHorizontal="16dp"
+			android:gravity="center_vertical"
+			android:background="#44000000">
+
+		<ImageView
+        android:id="@+id/btnPauseMenu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        android:tint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_marginEnd="12dp" />
+		
+		<TextView
+            android:id="@+id/statusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--:--"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+		<View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+		<ImageButton
+            android:id="@+id/btnNavLeft"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_navigation_button_focus"
+            android:src="@android:drawable/ic_media_previous"
+            android:tint="#FFFFFF"
+            android:contentDescription="Previous Page" />
+
+		<ImageButton
+            android:id="@+id/btnNavRight"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_navigation_button_focus"
+            android:src="@android:drawable/ic_media_next"
+            android:tint="#FFFFFF"
+            android:contentDescription="Next Page" />
+
+		<ImageButton
+            android:id="@+id/btnRotate"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:src="@android:drawable/ic_menu_rotate"
+            android:background="@drawable/bg_navigation_button_focus"
+            android:contentDescription="Rotate Screen"
+            android:tint="#FFFFFF" />
+
+		<ImageView
+            android:id="@+id/statusWifi"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@android:drawable/ic_menu_directions"
+            android:layout_marginEnd="10dp"
+            android:tint="#00E5FF" />
+
+		<ImageView
+            android:id="@+id/statusBattery"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@android:drawable/ic_lock_idle_low_battery"
+            android:tint="#FFFFFF" />
+	</LinearLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainVerticalRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        android:overScrollMode="never" />
+
+	<androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:visibility="gone" />
+
+</FrameLayout>

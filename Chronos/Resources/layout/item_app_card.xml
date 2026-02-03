@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_card_focus"
+    android:padding="16dp">
+
+	<ImageView
+        android:id="@+id/imgAppIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp" />
+
+	<TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp" />
+
+	<ImageView
+        android:id="@+id/imgFavIndicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/star_on"
+        android:tint="#FFD700"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

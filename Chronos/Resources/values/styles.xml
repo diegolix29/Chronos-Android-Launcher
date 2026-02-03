@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <!-- Focus-aware button styles -->
+    <style name="FocusableButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_glass_focus</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    
+    <style name="FocusableImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/bg_navigation_button_focus</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    
+    <style name="FocusableCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:foreground">@drawable/bg_card_focus</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

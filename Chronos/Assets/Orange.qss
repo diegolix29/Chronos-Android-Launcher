@@ -1,0 +1,21 @@
+/* --- GLOBAL WINDOW & COLORS --- */
+QMainWindow, QDialog, QStackedWidget, QScrollArea, QFrame {
+    background-color: #2a1638;
+    color: #ff9900;            /* Restored Orange Text */
+}
+QWidget { color: #ff9900; }
+
+/* --- GROUP BOXES --- */
+QGroupBox {
+    border: 1px solid #005a5a;
+    border-left: 4px solid #005a5a;
+    background-color: rgba(20, 10, 29, 180); 
+}
+
+/* --- INPUTS --- */
+QLineEdit, QComboBox {
+    background-color: #005a5a;
+    color: #ff00ff;            /* Neon Pink Accent Text */
+    border: 1px solid #ff00ff;
+    border-radius: 4px;
+}

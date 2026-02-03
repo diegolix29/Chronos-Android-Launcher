@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11000000">
+
+	<LinearLayout
+        android:id="@+id/headerToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_list_item_focus"
+        android:clickable="true"
+        android:focusable="true">
+
+		<ImageButton
+            android:id="@+id/btnPauseMenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_navigation_button_focus"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:scaleType="centerInside"
+            android:tint="#FFF" />
+
+		<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Games &amp; Consoles"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+	</LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/selectionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#CC000000"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+		<Button android:id="@+id/btnSelectAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select All" />
+		<Button android:id="@+id/btnDeleteSelected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" android:layout_marginStart="8dp" />
+		<View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+		<Button android:id="@+id/btnCancelSelection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" />
+	</LinearLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMainRows"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+
+</LinearLayout>

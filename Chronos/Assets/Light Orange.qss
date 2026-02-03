@@ -1,0 +1,23 @@
+/* --- GLOBAL WINDOW & VOLCANIC GRADIENT --- */
+QMainWindow, QDialog, QStackedWidget, QScrollArea, QFrame {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #800000, stop:1 #ff4500);
+    color: #ffcc00; 
+}
+QWidget { color: #ffcc00; }
+
+/* --- GROUP BOXES (Cyberpunk Logic) --- */
+QGroupBox {
+    border: 1px solid #800000;
+    border-left: 4px solid #800000;
+    border-radius: 2px;
+    background-color: rgba(10, 5, 5, 210); 
+}
+QGroupBox::title { color: #ff4500; font-weight: bold; text-transform: uppercase; }
+
+/* --- INPUTS (Cyberpunk Logic) --- */
+QLineEdit, QComboBox {
+    background-color: #1a0505;
+    color: #ff4500;            /* Molten Orange Text */
+    border: 1px solid #ff4500;
+    border-radius: 4px;
+}

@@ -1,0 +1,14 @@
+/* --- GLOBAL WINDOW & COLORS --- */
+QMainWindow, QDialog, QStackedWidget, QScrollArea, QFrame {
+    background-color: #140a1d;
+    color: #ff00ff;            /* Neon Pink Base */
+}
+QWidget { color: #ff00ff; }
+
+/* --- INPUTS --- */
+QLineEdit, QComboBox {
+    background-color: #261638;
+    color: #00ffff;            /* Neon Cyan Accent Text */
+    border: 1px solid #00ffff;
+    border-radius: 4px;
+}

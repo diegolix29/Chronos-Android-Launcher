@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+    
+    <!-- Focus state colors -->
+    <color name="colorFocus">#3498db</color>
+    <color name="colorFocusPressed">#2980b9</color>
+    <color name="colorFocusBackground">#55FFFFFF</color>
+    <color name="colorPressedBackground">#77FFFFFF</color>
+    <color name="colorDefaultBackground">#33FFFFFF</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#2d2d2d"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/expandIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_more"
+        android:tint="#ffffff"
+        android:rotation="0" />
+
+    <TextView
+        android:id="@+id/consoleName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Console Name"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/gameCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 games"
+        android:textColor="#cccccc"
+        android:textSize="12sp" />
+
+</LinearLayout>
